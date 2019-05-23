@@ -1,4 +1,5 @@
 <?php
+if(isset($_SESSION['login'])){
 $email = $_SESSION['email'];
 
 $query1 = "SELECT * FROM usuarios WHERE EMAIL = '$email'";
@@ -51,3 +52,7 @@ while($linha = mysqli_fetch_array($consulta1)){
 </div> 
 </div>    
 
+<?php
+}else{
+    header('location:index.php');
+}
