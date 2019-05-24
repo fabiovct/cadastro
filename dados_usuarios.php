@@ -39,7 +39,7 @@ while($linha = mysqli_fetch_array($consulta1)){
               <form action='sistema_interno.php' method="POST">
               <h4 class="card-title">Buscar Produtos<hr></h4>
             <p class="card-text"><h5>Digite o Código do Produto:</h5>
-            <input type="text" class="form-control" id="codigo_produto" name="codigo_produto"  placeholder="codigo">
+            <input  class="form-control" id="codigo_produto" name="codigo_produto"  placeholder="codigo">
             </p>
             <p class="card-text"></p>
             <p class="card-text"></p>
