@@ -1,12 +1,11 @@
 <?php
-
 include 'header.html';
 include 'Conection.php';
-
 session_start();
 if(isset($_SESSION['login'])){
     
     include 'dados_usuarios.php';
+    
 
     if(isset($_POST['codigo_produto'])){
         $codigo_produto = ($_POST['codigo_produto']);
@@ -25,6 +24,7 @@ if(isset($_SESSION['login'])){
                 <th>Codigo</th>
                 <th>Linha</th>
                 <th>Descrição</th>
+                <th>Ações</th>
                
             </tr>
               
@@ -48,6 +48,7 @@ if(isset($_SESSION['login'])){
                 <td><?php echo $codigo_produtos;  ?></td>
                 <td><?php echo $linha_produto;  ?></td>
                 <td><?php echo $descricao_produto;  ?></td>
+                <td><a href="sistema_interno.php"><h5 style="font-size: 15px; "><strong>Mais Informações</strong></h5></a></td>
             </tr>        
                 <?php
 

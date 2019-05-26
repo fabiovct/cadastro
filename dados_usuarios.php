@@ -24,12 +24,12 @@ while($linha = mysqli_fetch_array($consulta1)){
  <div class="card col-4" >
         <!--  <img src="..." class="card-img-top" alt="...">-->
           <div class="card-body">
-              <h4 class="card-title"><?php echo $nome_usuario; echo " ".$sobrenome_usuario; ?><hr></h4>
-            <p class="card-text"><?php echo "<strong>Email: </strong>". $email; ?></p>
-            <p class="card-text"><?php echo "<strong>Telefone: </strong>".$telefone_usuario; ?></p>
-            <p class="card-text"><?php echo "<strong>CPF: </strong>".$cpf_usuario; ?></p>
-           <a href="#" class="btn btn-primary">Editar Dados</a>
-           <a href="logout.php" class="btn btn-primary">Logout</a>
+                <h4 class="card-title"><?php echo $nome_usuario; echo " ".$sobrenome_usuario; ?><hr></h4>
+                <p class="card-text"><?php echo "<strong>Email: </strong>". $email; ?></p>
+                <p class="card-text"><?php echo "<strong>Telefone: </strong>".$telefone_usuario; ?></p>
+                <p class="card-text"><?php echo "<strong>CPF: </strong>".$cpf_usuario; ?></p>
+                <a href="edit_user.php" class="btn btn-primary">Editar Dados</a>
+                <a href="logout.php" class="btn btn-primary">Logout</a>
           </div>
   </div>
         
