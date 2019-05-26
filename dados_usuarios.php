@@ -46,11 +46,15 @@ while($linha = mysqli_fetch_array($consulta1)){
            <button type="submit" class="btn btn-primary">Buscar</button>
               </form>
           </div>
-  </div>
-    
-    
-</div> 
+  </div>  
+</div>  
 </div>    
+
+<div class="container mt-4">
+    <div class="col-8">
+<a href="create_produto.php" class="btn btn-primary">Cadastrar Novo Produto</a>
+    </div>
+</div>
 
 <?php
 }else{

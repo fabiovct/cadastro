@@ -12,6 +12,7 @@ $consulta1 = mysqli_query($conexao, $query1);
 while($linha = mysqli_fetch_array($consulta1)){
     
     $nome_usuario = utf8_encode($linha['nome']);
+    $senha_usuario = utf8_encode($linha['password']);
     $sobrenome_usuario = utf8_encode($linha['sobrenome']);
     $telefone_usuario = utf8_encode($linha['telefone']);
     $cpf_usuario = utf8_encode($linha['CPF']);
@@ -24,28 +25,28 @@ while($linha = mysqli_fetch_array($consulta1)){
     <div class="container  mt-4 col-4">    
         <form action='editar_dados_usuarios.php' method="POST">
           <div class="form-group">
-              <h3>Email Atual: <?php echo $email; ?></h3>
-            <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Digite seu novo email">
+              <h3>Email</h3>
+            <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" value="<?php echo $email; ?>">
           </div>
           <div class="form-group">
             <h3>Senha: </h3>
-            <input type="text" class="form-control" id="password" name="password" placeholder="Digite sua nova senha">
+            <input type="text" class="form-control" id="password" name="password" value="<?php echo $senha_usuario; ?>">
           </div>
             <div class="form-group">
-              <h3>Nome Atual: <?php echo $nome_usuario; ?></h3>
-            <input type="text" class="form-control" id="nome_usuario" name="nome_usuario" placeholder="Digite seu novo nome">
+              <h3>Nome</h3>
+            <input type="text" class="form-control" id="nome_usuario" name="nome_usuario" value="<?php echo $nome_usuario; ?>">
           </div>
             <div class="form-group">
-              <h3>Sobrenome Atual: <?php echo $sobrenome_usuario; ?></h3>
-            <input type="text" class="form-control" id="email" name="sobrenome_usuario" aria-describedby="emailHelp" placeholder="Digite seu novo Sobrenome">
+              <h3>Sobrenome</h3>
+            <input type="text" class="form-control" id="email" name="sobrenome_usuario" aria-describedby="emailHelp" value="<?php echo $sobrenome_usuario; ?>">
           </div>
             <div class="form-group">
-              <h3>Telefone Atual: <?php echo $telefone_usuario; ?></h3>
-            <input type="text" class="form-control" id="email" name="telefone_usuario" aria-describedby="emailHelp" placeholder="Digite seu novo Telefone">
+              <h3>Telefone</h3>
+            <input type="text" class="form-control" id="email" name="telefone_usuario" aria-describedby="emailHelp" value="<?php echo $telefone_usuario; ?>">
           </div>
             <div class="form-group">
-              <h3>CPF Atual: <?php echo $cpf_usuario; ?></h3>
-            <input type="text" class="form-control" id="email" name="cpf_usuario" aria-describedby="emailHelp" placeholder="Digite seu novo CPF">
+              <h3>CPF</h3>
+            <input type="text" class="form-control" id="email" name="cpf_usuario" aria-describedby="emailHelp" value="<?php echo $cpf_usuario; ?>">
           </div>
             <button type="submit" class="btn btn-primary">Alterar Dados</button>
             <a href="sistema_interno.php" class="btn btn-primary">Voltar</a>

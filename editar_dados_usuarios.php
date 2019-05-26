@@ -13,14 +13,6 @@ if(isset($_SESSION['login'])){
     
     $query = "UPDATE USUARIOS SET email='$email_novo' WHERE email = '$email'";    
     mysqli_query($conexao, $query);
-    
-    
-    
-    
-    
-    
-    
- 
     }else{
     header('location:index.php');
 }
@@ -37,8 +29,6 @@ if(mysqli_num_rows($consulta) == 1){
         $email = $email_novo;
 	$_SESSION['login'] = true;
 	$_SESSION['email'] = $email;
-//        $_SESSION['id_usuarios'] = $id;
-//echo $email;	
 header('location:sistema_interno.php');
 }
 else{
