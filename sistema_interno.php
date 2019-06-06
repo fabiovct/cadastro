@@ -9,8 +9,14 @@ if(isset($_SESSION['login'])){
 
     if(isset($_POST['codigo_produto'])){
         $codigo_produto = ($_POST['codigo_produto']);
-        $query_buscar_produtos = "SELECT * FROM produto WHERE codigo = '$codigo_produto'";
+        $query_buscar_produtos = "SELECT * FROM produto WHERE codigo LIKE '$codigo_produto%'";       
         $consulta_buscar_produtos = mysqli_query($conexao, $query_buscar_produtos);
+        //$query_contar_produtos = "SELECT COUNT codigo FROM produto Like '$codigo_produto%'";
+        //$consulta_contar_produtos = mysqli_query($conexao, $query_contar_produtos);
+        
+        $total = mysqli_num_rows($consulta_buscar_produtos);
+        
+        
 ?>
 <script>
     $(document).ready(function() {
@@ -57,7 +63,12 @@ if(isset($_SESSION['login'])){
             </tr>        
                 <?php
 
-    }}}else{
+    }
+    
+   
+    echo "Foram encontrados ". $total . " registros.";
+    
+        }}else{
         header('location:index.php');
     }
 ?>

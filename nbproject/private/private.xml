@@ -3,14 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/cadastro/editar_dados_usuarios.php</file>
-            <file>file:/C:/xampp/htdocs/cadastro/sistema_interno.php</file>
-            <file>file:/C:/xampp/htdocs/cadastro/footer.html</file>
-            <file>file:/C:/xampp/htdocs/cadastro/dados_usuarios.php</file>
-            <file>file:/C:/xampp/htdocs/cadastro/header.html</file>
-            <file>file:/C:/xampp/htdocs/cadastro/Conection.php</file>
+            <file>file:/C:/xampp/htdocs/cadastro/create_produto.php</file>
+            <file>file:/C:/xampp/htdocs/cadastro/edit_produto.php</file>
+            <file>file:/C:/xampp/htdocs/cadastro/insert_product_bd.php</file>
+            <file>file:/C:/xampp/htdocs/cadastro/info_produtos.php</file>
             <file>file:/C:/xampp/htdocs/cadastro/login.php</file>
-            <file>file:/C:/xampp/htdocs/cadastro/edit_user.php</file>
         </group>
     </open-files>
 </project-private>
